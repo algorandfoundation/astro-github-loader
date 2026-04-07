@@ -1,0 +1,42 @@
+{
+  "name": "docs",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "dev:fresh": "npm run clean && npm run import:github && astro dev",
+    "build:loader": "cd ../astro-github-loader && npm run build",
+    "build": "astro build",
+    "clean": "rm -rf src/content/docs/algokit/cli src/content/docs/reference/algokit-cli src/assets/imports/algokit-cli .astro",
+    "import:dry-run": "IMPORT_DRY_RUN=true astro sync",
+    "import:github": "IMPORT_GITHUB=true astro sync",
+    "import:force": "FORCE_IMPORT=true IMPORT_GITHUB=true astro sync",
+    "lint": "eslint .",
+    "prettier": "prettier --check .",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.2.3",
+    "@astrojs/starlight": "^0.32.5",
+    "@algorandfoundation/astro-github-loader": "file:../astro-github-loader",
+    "astro": "^5.5.6",
+    "emoji-regex-xs": "^1.0.0",
+    "picomatch": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.14.0",
+    "@types/picomatch": "^4.0.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-astro": "^1.3.1",
+    "prettier": "3.5.3",
+    "prettier-plugin-astro": "0.14.1",
+    "starlight-typedoc": "^0.21.0",
+    "typedoc": "^0.28.1",
+    "typedoc-plugin-markdown": "^4.6.1",
+    "vitest": "^3.1.1"
+  }
+}

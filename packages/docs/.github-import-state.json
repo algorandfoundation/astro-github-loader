@@ -1,0 +1,12 @@
+{
+  "imports": {
+    "algorandfoundation/algokit-cli@chore/content-fix": {
+      "name": "AlgoKit CLI Docs",
+      "repoId": "algorandfoundation/algokit-cli@chore/content-fix",
+      "lastCommitSha": "40762f855a87326e16ce94e94673c7fefac5c025",
+      "lastImported": "2025-10-25T12:40:08.346Z",
+      "ref": "chore/content-fix"
+    }
+  },
+  "lastChecked": "2025-10-25T12:40:08.346Z"
+}
