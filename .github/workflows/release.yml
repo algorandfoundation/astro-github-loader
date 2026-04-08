@@ -20,4 +20,4 @@ jobs:
       - run: npm ci
       - run: npm test --workspace @algorandfoundation/astro-github-loader
       - run: npm run build --workspace @algorandfoundation/astro-github-loader
-      - run: npm publish --workspace packages/astro-github-loader --provenance --access public
+      - run: npm publish --workspace @algorandfoundation/astro-github-loader --provenance --access public
